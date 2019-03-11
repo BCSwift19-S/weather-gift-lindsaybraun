@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		579E95D322367E13008A92D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579E95D222367E13008A92D2 /* AppDelegate.swift */; };
-		579E95D522367E13008A92D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579E95D422367E13008A92D2 /* ViewController.swift */; };
 		579E95D822367E13008A92D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579E95D622367E13008A92D2 /* Main.storyboard */; };
 		579E95DA22367E15008A92D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 579E95D922367E15008A92D2 /* Assets.xcassets */; };
 		579E95DD22367E15008A92D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579E95DB22367E15008A92D2 /* LaunchScreen.storyboard */; };
+		579E95E522367EC3008A92D2 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579E95E422367EC3008A92D2 /* DetailVC.swift */; };
+		579E95E7223681ED008A92D2 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579E95E6223681ED008A92D2 /* ListVC.swift */; };
+		579E95E9223683B2008A92D2 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579E95E8223683B2008A92D2 /* PageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		579E95CF22367E13008A92D2 /* Weather Gift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather Gift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		579E95D222367E13008A92D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		579E95D422367E13008A92D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		579E95D722367E13008A92D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		579E95D922367E15008A92D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		579E95DC22367E15008A92D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		579E95DE22367E15008A92D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		579E95E422367EC3008A92D2 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		579E95E6223681ED008A92D2 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		579E95E8223683B2008A92D2 /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				579E95D222367E13008A92D2 /* AppDelegate.swift */,
-				579E95D422367E13008A92D2 /* ViewController.swift */,
+				579E95E8223683B2008A92D2 /* PageVC.swift */,
+				579E95E422367EC3008A92D2 /* DetailVC.swift */,
+				579E95E6223681ED008A92D2 /* ListVC.swift */,
 				579E95D622367E13008A92D2 /* Main.storyboard */,
 				579E95D922367E15008A92D2 /* Assets.xcassets */,
 				579E95DB22367E15008A92D2 /* LaunchScreen.storyboard */,
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				579E95D522367E13008A92D2 /* ViewController.swift in Sources */,
+				579E95E7223681ED008A92D2 /* ListVC.swift in Sources */,
+				579E95E9223683B2008A92D2 /* PageVC.swift in Sources */,
 				579E95D322367E13008A92D2 /* AppDelegate.swift in Sources */,
+				579E95E522367EC3008A92D2 /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5FDXM7R562;
 				INFOPLIST_FILE = "Weather Gift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5FDXM7R562;
 				INFOPLIST_FILE = "Weather Gift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
